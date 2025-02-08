@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
 header{
     display: flex;
-    height: 80px;
-    background-color: #f1e44c;
+    height: 75px;
+    background-color: #ffffff;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #f4eded;
 }
 .myntra_home{
     height: 36px; 
@@ -21,11 +23,11 @@ header{
 .action_bar{
     margin-right:4%;
 }
-.navigation_bar{
+.nav_bar{
     display: flex;
     min-width: 500px;
     justify-content: space-between;
-    padding: 0 17px 28px;
+    padding: 10px 0 17px 28px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -33,4 +35,125 @@ header{
     color: #282c3f;
     border-bottom: none;
     font-weight: 700;
+    align-items: center;
+}
+.nav_bar .link{
+    text-decoration: none;
+    border-bottom: 1.5px solid #ffffff;
+    padding: 30px 0;
+}
+#id1:hover{
+    border-bottom: 3px solid rgb(222, 127, 130);
+}
+#id2:hover{
+    border-bottom: 3px solid rgb(234, 107, 200);
+}
+#id3:hover{
+    border-bottom: 3px solid rgb(243, 168, 77);
+}
+#id4:hover{
+    border-bottom: 3px solid rgb(87, 220, 169);
+}
+#id5:hover{
+    border-bottom: 3px solid rgb(222, 127, 130);
+}
+#id6:hover{
+    border-bottom: 3px solid rgb(238, 11, 19);
+}
+.nav_bar a sup{
+    font-size: 10px;
+    color: #ff0000;
+}
+.search_icon{
+   height: 21px;
+   padding: 10px;
+   box-sizing: content-box;
+   background: #f5f5f6;
+   color: #282c3f;
+   font-weight: 300;
+   border-radius: 4px 0 0 4px;
+}
+.search_input{
+    background: #f5f5f6;
+    color: #696e79;
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+}
+.search_bar{
+    display: flex;
+    height: 40px;
+    min-width: 400px;
+    width: 30px;
+    padding: 20px;
+    align-items: center;
+}
+.action_bar{
+    height: 40px;
+    min-width: 200px;
+    /* margin: 20px 0 0 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-evenly;
+}
+.action_container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Section */
+.banner_image{
+    height: 300px;
+   width: 100%;
+   margin: 40px 0;
+}
+
+.category_heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category_items{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sale_item{
+   width: 250px;
+}
+.footer_container{
+    padding: 30px 0 40px 0;
+    background-color:#fAfBfC;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column a{
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.footer_column h3{
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.copyright{
+    color: #94969f;
+    text-align: end;
+    padding: 15px;
 }
